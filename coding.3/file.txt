@@ -1,0 +1,2 @@
+Text from parent process
+Text from child process
