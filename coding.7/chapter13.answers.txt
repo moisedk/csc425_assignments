@@ -1,0 +1,25 @@
+/*********************************************
+Name: MOISE DETE-KPINSSOUNON
+Question 2: Runing "$free --mega" gives me  this, which I expect because there are 16GB memory available in the computer (roughly 16 000 megabytes)
+About 7GB has been used, and 4.5GB are free; Most of the number make sense to me, except the cache/buffer which is a little too high
+
+               total        used        free      shared  buff/cache   available
+Mem:           16492        6833        4473         661        6197        9658
+Swap:              0           0           0
+
+(I ran this on my own computer, not the server because I did not know what to expect)
+
+Question 4: The size of the use memory increased after I started the program; When I incrased the number of memory to 10MB for an array, 
+I received a segmentation fault; After killing the program, the free memory increased. This was expected;
+Question 6: I used one process to fork two children and used getpid() to get their IDs. Please see dumb_ids.c which is the program that I used
+Question 7: What do I see? ==> A table with different columns which I suppose represent properties of the memory of the process whose id I passed to 'pmap'
+            Columns include Address, Perm, Device, Inode, etc, most of which don't make sense to me.
+            In addition to the stack, there are other memory spaces like 'anonymous' or 'kernelPageSize' which don't look familier
+            I cannot precisely distinguish between what is the heap/code from the output of 'pmap --XX pid'. 
+Question 8: The stack size grow almost proportionally to the memory size that I passed to 'memory-user'
+            stack_size      memory-user argument
+            992             1
+            4892            5
+            6848            7
+
+*********************************************/
